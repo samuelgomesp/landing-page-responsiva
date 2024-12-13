@@ -1,4 +1,4 @@
-# Página de vendas
+# Landing Page
 
 ## Descrição
 
