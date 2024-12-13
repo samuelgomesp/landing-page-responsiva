@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fundo-branco:  #ffffff;
+    --fundo-claro:   #e0e0e0;
+    --cor-principal: #6c63ff;
+    --fundo-escuro:  #2c2c2e;
+    --fundo-preto:   #070707;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fundo-claro);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(./images/pexels-bertellifotografia-3321797.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--fundo-branco);
+    padding: 0 3rem 0 3rem;
+}
+
+.hero-content h1 {
+    margin-top: 3rem;
+    padding: 0 0.3rem 0 0.3rem;
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fundo-branco);
+    font-size: 1rem;
+    background-color: var(--cor-principal);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
+    width: fit-content;
+    align-self: center;
+}
+
+
+.speakers h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.speaker-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.6rem 1.6rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--fundo-branco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+
+.speaker-card img {
+    display: flex;
+    align-self: center;
+    height: auto;
+    width: 50%;
+    border-radius: 50%;
+    margin: 1rem 0 1rem 0;
+}
+
+.schedule h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.6rem 1.6rem;
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+    background-color: var(--fundo-branco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.newsletter-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.newsletter-image img {
+    width: 300px;
+    height: 200px;
+    margin-top: 3rem;      
+}
+
+.newsletter-text h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-text p {
+    color: rgb(137, 136, 132);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 0 1.6rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 1.6rem 1.6rem;
+}
+
+.form-group input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 0.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(137, 136, 132);
+}
+
+.newsletter-form button {
+    background-color: var(--cor-principal);
+    color: var(--fundo-branco);
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 4rem;
+    align-self: center;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.6rem 1.6rem 1.6rem;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .speakers {
+        margin: 0 6rem;
+    }
+
+    .speakers-grid {
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+    }
+
+    .speaker-card {
+        margin: 0 0.6rem;
+        padding: 0.6rem 0;
+        height: 18rem;
+        width: 100%;
+        line-height: 2rem;
+    }
+
+    .speaker-card img {
+        width: fit-content;
+    }
+
+    .schedule {
+        margin: 0 6rem;
+    }
+
+    .schedule-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .schedule-item {
+        margin: 0.6rem;
+    }
+
+    .newsletter {
+        margin: 0 6rem;
+    }
+
+    .newsletter-grid {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .newsletter-image {
+        width: 100%;
+        margin-right: 1rem;
+    }
+
+    .newsletter-image img{
+        height: auto;
+        width: 70%;
+    }
+
+    .newsletter-text {
+        text-align: start;
+        margin-left: 1rem;
+        width: 100%;
+    }
+
+    .newsletter-text h2 {
+        justify-content: start;
+    }
+
+    .newsletter-text p {
+        display: flex;
+        justify-content: start;
+        margin: 0;
+    }
+
+    .form-group {
+        align-items: start;
+        margin: 1.6rem 0;
+    }
+
+    .form-group input {
+        width: 60%;
+    }
+
+    .footer {
+        margin: 3rem 0 1rem 0;
+    }
+
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--fundo-escuro);
+    }
+
+    h2 {
+        color: var(--fundo-branco);
+    }
+
+    .speaker-card {
+        background-color: var(--fundo-preto);
+        color: var(--fundo-branco);
+    }
+
+    .schedule-item {
+        background-color: var(--fundo-preto);
+        color: var(--fundo-branco);
+    }
+
+    .form-group label {
+        color: var(--fundo-branco);
+    }
+
+    .form-group input {
+        background-color: var(--fundo-preto);
+    }
+
+    .footer p {
+        color: var(--fundo-branco);
+    }
+
+
+}
+
+
